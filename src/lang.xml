@@ -1,0 +1,806 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><root>
+    <!--                           language en_US                               -->
+    <entry lang="en_US">
+        <account>
+            <function>
+                <selection>Please select a function('1' to enter user file interface, '2' to manage backup, '3' to setting config, '-1' to logout, '-2' to exit program): </selection>
+            </function>
+            <question>
+                <userName>Please enter user name(letter in half width): </userName>
+                <password>Please enter password: </password>
+            </question>
+            <save>
+                <user name="cis" pw="1234">
+                    <lastLogin>Last login in </lastLogin>
+		        </user>
+            </save>
+            <wait>Please wait...</wait>
+            <invalid>Invalid user name or password, please enter again. Remain times: </invalid>
+            <forceClosed>Forced to be close.</forceClosed>
+            <exit>Exit program successfully.</exit>
+            <state done="Login successfully!" error="Error!" finish="Logout successfully!"/>
+        </account>
+        <dir tag="config">Establishing config directory...</dir>
+        <file name="userFile">
+            <ini>Initializing userfile...</ini>
+            <function>
+                <selection>Please select a type('1' to personal contact book, '2' to personal books, '3' to personal work, '-1' to function menu): </selection>
+                <contact>
+                    <selection>Please select a method('1' to add new data, '2' to view, '3' to edit, '-1' to back to user file interface): </selection>
+                    <add>
+                        <question>
+                            <name>Enter name: </name>
+                            <birth>Enter birth(MMDD): </birth>
+                            <phone>Enter phone number((0x)xxxxxxx or ((0x)xxxxxxx): </phone>
+                            <sort>Enter sort: </sort>
+                            <email>Enter e-mail: </email>
+                        </question>
+                        <exceed>Data exceed the maximum!</exceed>
+                    </add>
+                    <view>
+                        <question>View option: </question>
+                        <choose>('1' to view all datas, '2' to view data by search, '-1' to cancel)</choose>
+                        <order>
+                            <hint>(Enter 'display' to setting views option, 'page' to pagination, 'finish' to done)</hint>
+                            <display>Select to enable(disable) column display('finish' to done input, '-1' to cancel): </display>
+                            <page>Enter a number to paginate(0 ~ 128, '-1' to cancel): </page>
+                            <search>Search by('1' name, '2' birth, '3' phone, '4' sort, '5' email): </search>
+                        </order>
+                        <noFound>Data no found!</noFound>
+                    </view>
+                    <edit>
+                        <question>Edit option: </question>
+                        <choose>('1' to remove data, '2' to modify data, '-1' to cancel)</choose>
+                        <order>
+                            <remove>Enter number to choose data to remove('finish' to done input, '-1' to cancel): </remove>
+                            <modify>Enter a number to choose data to modify('-1' to cancel): </modify>
+                            <choosed>Now choosed: </choosed>
+                        </order>
+                    </edit>
+                </contact>
+                <book>
+                    <selection>Please select a method('1' to add new data, '2' to view, '3' to edit, '-1' to back to user file interface): </selection>
+                    <add>
+                        <question>
+                            <bookName>Enter book name: </bookName>
+                            <author>Enter author name: </author>
+                            <publish>Enter publish name: </publish>
+                            <label>Enter label(a letter with five number): </label>
+                            <sort>Enter sort: </sort>
+                            <year>Enter publish year: </year>
+                        </question>
+                        <exceed>Data exceed the maximum!</exceed>
+                    </add>
+                    <view>
+                        <question>View option: </question>
+                        <choose>('1' to view all datas, '2' to view data by search, '-1' to cancel)</choose>
+                        <order>
+                            <hint>(Enter 'display' to setting views option, 'page' to pagination, 'finish' to done)</hint>
+                            <display>Select to enable(disable) column display('finish' to done input, '-1' to cancel): </display>
+                            <page>Enter a number to paginate(0 ~ 128, '-1' to cancel): </page>
+                            <search>Search by('1' bookName, '2' author, '3' publish, '4' label, '5' sort, '6' year): </search>
+                        </order>
+                        <noFound>Data no found!</noFound>
+                    </view>
+                    <edit>
+                        <question>Edit option: </question>
+                        <choose>('1' to remove data, '2' to modify data, '-1' to cancel)</choose>
+                        <order>
+                            <remove>Enter number to choose data to remove('finish' to done input, '-1' to cancel): </remove>
+                            <modify>Enter a number to choose data to modify('-1' to cancel): </modify>
+                            <choosed>Now choosed: </choosed>
+                        </order>
+                    </edit>
+                </book>
+                <work>
+                    <selection>Please select a method('1' to add new data, '2' to view, '3' to edit, '-1' to back to user file interface): </selection>
+                    <add>
+                        <question>
+                            <workName>Enter work name: </workName>
+                            <startTime>Enter start time(HH:mm:ss 24h-format): </startTime>
+                            <finishTime>Enter finish time(HH:mm:ss 24h-format): </finishTime>
+                            <finishPercent>Enter finish percent(0~100)(%): </finishPercent>
+                            <status>Enter status('1' 完成, '2' 執行中, '3' 未開始): </status>
+                            <label>Enter label(a letter with five number): </label>
+                            <sort>Enter sort: </sort>
+                            <workContent>Enter work content: </workContent>
+                        </question>
+                        <exceed>Data exceed the maximum!</exceed>
+                    </add>
+                    <view>
+                        <question>View option: </question>
+                        <choose>('1' to view all datas, '2' to view data by search, '-1' to cancel)</choose>
+                        <order>
+                            <hint>(Enter 'display' to setting views option, 'page' to pagination, 'finish' to done)</hint>
+                            <display>Select to enable(disable) column display('finish' to done input, '-1' to cancel): </display>
+                            <page>Enter a number to paginate(0 ~ 128, '-1' to cancel): </page>
+                            <search>Search by('1' workName, '2' startTime, '3' finishTime, '4' finishPercent, '5' status, '6' label, '7' sort, '8' workContent): </search>
+                        </order>
+                        <noFound>Data no found!</noFound>
+                    </view>
+                    <edit>
+                        <question>Edit option: </question>
+                        <choose>('1' to remove data, '2' to modify data, '-1' to cancel)</choose>
+                        <order>
+                            <remove>Enter number to choose data to remove('finish' to done input, '-1' to cancel): </remove>
+                            <modify>Enter a number to choose data to modify('-1' to cancel): </modify>
+                            <choosed>Now choosed: </choosed>
+                        </order>
+                    </edit>
+                    <state execute="執行中" finish="完成" unwork="未開始"/>
+                </work>
+            </function>
+            <problem>
+                <gone>
+                    <hasBackup>
+                        <question>The user file has gone, backup is detected, need to </question>
+                        <chooseWithClone>('1' to recover, '2' to use other clones as user file, '3' to create an new user file)?</chooseWithClone>
+                        <chooseNoClone>('1' to recover, '2' to create an new user file)?</chooseNoClone>
+                    </hasBackup>
+                    <haveBackup>
+                        <question>The user file has gone, backups are detected, need to </question>
+                        <chooseWithClone>('1' to choose backup to recover, '2' to use other clones as user file, '3' to create an new user file)?</chooseWithClone>
+                        <chooseNoClone>('1' to choose backup to recover, '2' to create an new user file)?</chooseNoClone>
+                    </haveBackup>
+                    <noBackup>
+                        <question>The user file has gone without backup, need to </question>
+                        <chooseWithClone>('1' to use other clones as user file, '2' to create an new user file)?</chooseWithClone>
+                        <chooseNoClone>create an new user file now</chooseNoClone>
+                    </noBackup>
+                </gone>
+                <clone>
+                    <single>
+                        <question>The user file has detected clone. Need to </question>
+                        <choose>('1' to remove, '2' to save)?</choose>
+                    </single>
+                    <multiple>
+                        <question>The user file have detected multiple clones. Need to </question>
+                        <choose>('1' to remove all, '2' to choose files to remove, '3' to save)?</choose>
+                    </multiple>
+                </clone>
+                <repair>
+                    <question>The user file is crashed. Need to </question>
+                    <choose>('1' to repair by recheck user file, '2' to create a new user file now, '3' to refetch current user file)?</choose>
+                </repair>
+            </problem>
+            <fix>
+                <create>Creating an new user file...</create>
+                <recover>Recovering user file...</recover>
+                <remove>Removing clone(s)...</remove>
+                <save>Saving clone(s)...</save>
+                <order>
+                    <choose>
+                        <clone>
+                            <remove>Enter number to choose clone(s) to remove("finish" to done input, '-1' to cancel): </remove>
+                            <recover>Enter number to choose clone to replace('-1' to cancel): </recover>
+                        </clone>
+                        <backup>
+                            <recover>Enter number to choose backup to recover('-1' to cancel): </recover>
+                        </backup>
+                    </choose>
+                    <choosed>Now choosed: </choosed>
+                    <required>Required to choose: </required>
+                    <notEnough>Choosed is not enough!</notEnough>
+                </order>
+                <confirm>Are you sure?('y' or 'n')</confirm>
+            </fix>
+            <state cancel="Canceled!" done="Completed!" error="Error!" invalid="Invalid!"/>
+        </file>
+        <file name="setting">
+            <ini>Initializing setting of config...</ini>
+            <function>
+                <selection>Please select a option('1' to set language, '2' to set backup, '3' to set user interface, '4' to optimize, '5' refetch setting file, '-1' to function menu): </selection>
+            </function>
+            <problem>
+                <setLanguage>
+                    <question>Set language option: </question>
+                    <choose>('1' switch to en_US, '2' switch to zh_TW, '3' switch to ja_JP, '-1' to cancel)</choose>
+                </setLanguage>
+                <setBackup>
+                    <question>Set backup option: </question>
+                    <choose>('1' autoBackup, '2' max backup keep number(s), '3' autoBackup interval time(s), '-1' to cancel)</choose>
+                </setBackup>
+                <setBackupKeep>
+                    <question>Detected that the current backup is more than the amount to be set, need to </question>
+                    <choose>('1' remove old backups first, '2' to choose backups to remove, '-1' to cancel)</choose>
+                </setBackupKeep>
+                <setUI>
+                    <question>Set user interface option: </question>
+                    <choose>('1' switch to text interface, '2' switch to graphic interface, '-1' to cancel)</choose>
+                </setUI>
+            </problem>
+            <fix>
+                <remove>Removing backup(s)...</remove>
+                <UI>Changing user interface...</UI>
+                <language>Changing language...</language>
+                <keep>Changing backup keep number(s)...</keep>
+                <interval>Changing autoBackup interval time(s)...</interval>
+                <autoOff>Disabling autoBackup...</autoOff>
+                <autoOn>Enabling autoBackup...</autoOn>
+                <optimize>
+                    <userFile>Optimizing user file...</userFile>
+                    <backup>Optimizing backup file(s)...</backup>
+                    <setting>Optimizing setting file...</setting>
+                    <all>Optimizing and correcting all files...</all>
+                </optimize>
+                <refetch>Refetching setting file...</refetch>
+                <order>
+                    <choose>
+                        <disableAutoBackup>Do you want to disable autoBackup?('y' or 'n')</disableAutoBackup>
+                        <enableAutoBackup>Do you want to enable autoBackup?('y' or 'n')</enableAutoBackup>
+                        <backupKeep>Enter number to set backup keep number(s)(range in 1 ~ 30, '-1' to cancel): </backupKeep>
+                        <backupInterval>Enter number to set interval times of autoBackup(range in 1 ~ 10, '-1' to cancel): </backupInterval>
+                        <remove>Enter number to choose backup(s) to remove("finish" to done input, '-1' to cancel): </remove>
+                    </choose>
+                    <choosed>Now choosed: </choosed>
+                    <required>Required to choose: </required>
+                    <notEnough>Choosed is not enough!</notEnough>
+                </order>
+                <confirm>Are you sure?('y' or 'n')</confirm>
+                <optimizeConfirm>Optimization cannot be terminated in process, are you really sure?('y' or 'n')</optimizeConfirm>
+            </fix>
+            <state cancel="Canceled!" done="Completed!" error="Error!" invalid="Invalid!"/>
+        </file>
+        <file name="backup">
+            <function>
+                <selection>Please select a function('1' to backup, '2' to recover, '3' to delete backup(s), '-1' to function menu): </selection>
+            </function>
+            <fix>
+                <noBackup>Backup no exist!</noBackup>
+                <remove>Removing backup(s)...</remove>
+                <recover>Recovering from backup...</recover>
+                <manualbackup>Backuping...</manualbackup>
+                <autoBackup>Auto backuping...</autoBackup>
+                <optimize>
+                    <crashRemove>Removing crashed backup(s)...</crashRemove>
+                    <correctLocation>Correcting backup(s) location...</correctLocation>
+                </optimize>
+                <order>
+                    <choose>
+                        <recover>Enter number to choose backup to recover('-1' to cancel): </recover>
+                        <remove>Enter number to choose backup(s) to remove("finish" to done input, '-1' to cancel): </remove>
+                    </choose>
+                    <choosed>Now choosed: </choosed>
+                </order>
+                <confirm>Are you sure?('y' or 'n')</confirm>
+            </fix>
+            <state cancel="Canceled!" done="Completed!" error="Error!" invalid="Invalid!"/>
+        </file>
+    </entry>
+    <!--                           language zh_TW                               -->
+    <entry lang="zh_TW">
+        <account>
+            <function>
+                <selection>請選擇一個功能('1' 進入使用者資料介面, '2' 管理備份, '3' 進入設定, '-1' 登出, '-2' 結束程式): </selection>
+            </function>
+            <question>
+                <userName>請輸入用戶名(半形英文): </userName>
+                <password>請輸入密碼: </password>
+            </question>
+            <save>
+                <user name="cis" pw="1234">
+                    <lastLogin>上次登入時間在 </lastLogin>
+		        </user>
+            </save>
+            <wait>請稍等...</wait>
+            <invalid>無效的帳號或密碼，請再輸入一次。剩餘次數: </invalid>
+            <forceClosed>被強制關閉</forceClosed>
+            <exit>成功結束程式</exit>
+            <state done="成功登入!" error="錯誤!" finish="成功登出!"/>
+        </account>
+        <dir tag="config">正在建立config資料夾...</dir>
+        <file name="userFile">
+            <ini>正在初始化使用者資料...</ini>
+            <function>
+                <selection>請選擇一個類型('1' 進入個人聯絡簿, '2' 進入個人書籍, '3' 進入個人工作, '-1' 回到功能選單): </selection>
+                <contact>
+                    <selection>請選擇指示('1' 增加新資料, '2' 瀏覽資料, '3' 編輯資料, '-1' 回到使用者資料介面): </selection>
+                    <add>
+                        <question>
+                            <name>輸入姓名: </name>
+                            <birth>輸入生日(MMDD): </birth>
+                            <phone>輸入電話號碼((0x)xxxxxxxx 或 (0x)xxxxxxx): </phone>
+                            <sort>輸入分類: </sort>
+                            <email>輸入電子信箱: </email>
+                        </question>
+                        <exceed>資料超過上限!</exceed>
+                    </add>
+                    <view>
+                        <question>瀏覽選項: </question>
+                        <choose>('1' 瀏覽所有資料, '2' 尋找資料, '-1' 取消操作)</choose>
+                        <order>
+                            <hint>(輸入'display' 查看預覽選項, 'page' 進行分頁, 'finish' 完成)</hint>
+                            <display>選擇開啟(關閉)欄位展示('finish' 結束輸出, '-1' 取消操作): </display>
+                            <page>輸入要一頁所需資料(1 ~ 128, '-1' 取消操作): </page>
+                            <search>輸入搜索代號('1' name, '2' birth, '3' phone, '4' sort, '5' email): </search>
+                        </order>
+                        <noFound>查無資料!</noFound>
+                    </view>
+                    <edit>
+                        <question>編輯選項: </question>
+                        <choose>('1' 移除資料, '2' 修改資料, '-1' 取消操作)</choose>
+                        <order>
+                            <remove>輸入要移除的資料('finish' 結束輸出, '-1' 取消操作): </remove>
+                            <modify>輸入要修改的資料('-1' 取消操作): </modify>
+                            <choosed>目前已選: </choosed>
+                        </order>
+                    </edit>
+                </contact>
+                <book>
+                    <selection>請選擇指示('1' 增加新資料, '2' 瀏覽資料, '3' 編輯資料, '-1' 回到使用者資料介面): </selection>
+                    <add>
+                        <question>
+                            <bookName>輸入書名: </bookName>
+                            <author>輸入作者名: </author>
+                            <publish>輸入出版名: </publish>
+                            <label>輸入編號(1英文字母+5數字): </label>
+                            <sort>輸入分類: </sort>
+                            <year>輸入出版年份: </year>
+                        </question>
+                        <exceed>資料超過上限!</exceed>
+                    </add>
+                    <view>
+                        <question>瀏覽選項: </question>
+                        <choose>('1' 瀏覽所有資料, '2' 尋找資料, '-1' 取消操作)</choose>
+                        <order>
+                            <hint>(輸入'display' 查看預覽選項, 'page' 進行分頁, 'finish' 完成)</hint>
+                            <display>選擇開啟(關閉)欄位展示('finish' 結束輸出, '-1' 取消操作): </display>
+                            <page>輸入要一頁所需資料(1 ~ 128, '-1' 取消操作): </page>
+                            <search>輸入搜索代號('1' bookName, '2' author, '3' publish, '4' label, '5' sort, '6' year): </search>
+                        </order>
+                        <noFound>查無資料!</noFound>
+                    </view>
+                    <edit>
+                        <question>編輯選項: </question>
+                        <choose>('1' 移除資料, '2' 修改資料, '-1' 取消操作)</choose>
+                        <order>
+                            <remove>輸入要移除的資料('finish' 結束輸出, '-1' 取消操作): </remove>
+                            <modify>輸入要修改的資料('-1' 取消操作): </modify>
+                            <choosed>目前已選: </choosed>
+                        </order>
+                    </edit>
+                </book>
+                <work>
+                    <selection>請選擇指示('1' 增加新資料, '2' 瀏覽資料, '3' 編輯資料, '-1' 回到使用者資料介面): </selection>
+                    <add>
+                        <question>
+                            <workName>輸入工作名稱: </workName>
+                            <startTime>輸入開始時間(HH:mm:ss 24小時格式): </startTime>
+                            <finishTime>輸入結束時間(HH:mm:ss 24小時格式): </finishTime>
+                            <finishPercent>輸入完成百分比(0~100)(%): </finishPercent>
+                            <status>輸入狀態('1' 完成, '2' 執行中, '3' 未開始): </status>
+                            <label>輸入編號(1英文字母+5數字): </label>
+                            <sort>輸入分類: </sort>
+                            <workContent>輸入工作內容: </workContent>
+                        </question>
+                        <exceed>資料超過上限!</exceed>
+                    </add>
+                    <view>
+                        <question>瀏覽選項: </question>
+                        <choose>('1' 瀏覽所有資料, '2' 尋找資料, '-1' 取消操作)</choose>
+                        <order>
+                            <hint>(輸入'display' 查看預覽選項, 'page' 進行分頁, 'finish' 完成)</hint>
+                            <display>選擇開啟(關閉)欄位展示('finish' 結束輸出, '-1' 取消操作): </display>
+                            <page>輸入要一頁所需資料(1 ~ 128, '-1' 取消操作): </page>
+                            <search>輸入搜索代號('1' workName, '2' startTime, '3' finishTime, '4' finishPercent, '5' status, '6' label, '7' sort, '8' workContent): </search>
+                        </order>
+                        <noFound>查無資料!</noFound>
+                    </view>
+                    <edit>
+                        <question>編輯選項: </question>
+                        <choose>('1' 移除資料, '2' 修改資料, '-1' 取消操作)</choose>
+                        <order>
+                            <remove>輸入要移除的資料('finish' 結束輸出, '-1' 取消操作): </remove>
+                            <modify>輸入要修改的資料('-1' 取消操作): </modify>
+                            <choosed>目前已選: </choosed>
+                        </order>
+                    </edit>
+                    <state execute="執行中" finish="完成" unwork="未開始"/>
+                </work>
+            </function>
+            <problem>
+                <gone>
+                    <hasBackup>
+                        <question>使用者資料遺失，偵測到備份檔，需要 </question>
+                        <chooseWithClone>('1' 從備份還原, '2' 使用其他複製的使用者資料代替, '3' 新建使用者資料)?</chooseWithClone>
+                        <chooseNoClone>('1' 從備份還原, '2' 新建使用者資料)?</chooseNoClone>
+                    </hasBackup>
+                    <haveBackup>
+                        <question>使用者資料遺失，偵測到多個備份檔，需要 </question>
+                        <chooseWithClone>('1' 選擇備份還原, '2' 使用其他複製的使用者資料代替, '3' 新建使用者資料)?</chooseWithClone>
+                        <chooseNoClone>('1' 選擇備份還原, '2' 新建使用者資料)?</chooseNoClone>
+                    </haveBackup>
+                    <noBackup>
+                        <question>使用者資料遺失，未偵測到備份檔，需要 </question>
+                        <chooseWithClone>('1' 使用其他複製的使用者資料代替, '2' 新建使用者資料)?</chooseWithClone>
+                        <chooseNoClone>立即新建使用者資料</chooseNoClone>
+                    </noBackup>
+                </gone>
+                <clone>
+                    <single>
+                        <question>偵測到複製的使用者資料，需要 </question>
+                        <choose>('1' 移除, '2' 保留)?</choose>
+                    </single>
+                    <multiple>
+                        <question>偵測到多個複製的使用者資料，需要 </question>
+                        <choose>('1' 全部移除, '2' 選擇移除, '3' 保留)?</choose>
+                    </multiple>
+                </clone>
+                <repair>
+                    <question>使用者資料已損毀，需要 </question>
+                    <choose>('1' 重新檢查可用恢復, '2' 立即新建使用者資料, '3' 重新擷取使用者資料)?</choose>
+                </repair>
+            </problem>
+            <fix>
+                <create>正在建立新的使用者資料...</create>
+                <recover>正在還原使用者資料...</recover>
+                <remove>正在移除複製的使用者資料...</remove>
+                <save>正在保留複製檔...</save>
+                <order>
+                    <choose>
+                        <clone>
+                            <remove>輸入要移除的複製的使用者資料編號("finish" 結束輸入, '-1' 取消操作): </remove>
+                            <recover>輸入要進行替代的複製的使用者資料編號('-1' 取消操作): </recover>
+                        </clone>
+                        <backup>
+                            <recover>輸入要進行還原的備份資料編號('-1' 取消操作): </recover>
+                        </backup>
+                    </choose>
+                    <choosed>目前已選: </choosed>
+                    <required>需要選擇: </required>
+                    <notEnough>選的不足夠!</notEnough>                    
+                </order>
+                <confirm>確定選擇?('y' 或 'n')</confirm>
+            </fix>
+            <state cancel="已取消!" done="完成!" error="錯誤!" invalid="無效!"/>
+        </file>
+        <file name="setting">
+            <ini>正在初始化設定檔...</ini>
+            <function>
+                <selection>請選擇一個選項('1' 設定語言, '2' 設定備份, '3' 設定使用者介面, '4' 進行優化, '5'重新擷取設定檔, '-1' 回到功能選單): </selection>
+            </function>
+            <problem>
+                <setLanguage>
+                    <question>設定語言選項: </question>
+                    <choose>('1' 切換成 en_US, '2' 切換成 zh_TW, '3' 切換成ja_JP, '-1' 取消操作)</choose>
+                </setLanguage>
+                <setBackup>
+                    <question>設定備份選項: </question>
+                    <choose>('1' 自動備份, '2' 最大備份保存量, '3' 自動備份間隔次數, '-1' 取消操作)</choose>
+                </setBackup>
+                <setBackupKeep>
+                    <question>偵測到目前備份比即將設定的保存量還多，需要 </question>
+                    <choose>('1' 優先移除舊的備份, '2' 選擇備份移除, '-1' 取消操作)</choose>
+                </setBackupKeep>
+                <setUI>
+                    <question>設定使用者介面選項: </question>
+                    <choose>('1' 切換成文字介面, '2' 切換成圖形介面, '-1' 取消操作)</choose>
+                </setUI>
+            </problem>
+            <fix>
+                <remove>正在移除備份...</remove>
+                <UI>正在更改使用者介面...</UI>
+                <language>正在更改語言...</language>
+                <keep>正在更改備份保存量...</keep>
+                <interval>正在更改自動備份間隔次數...</interval>
+                <autoOff>正在關閉自動備份...</autoOff>
+                <autoOn>正在啟動自動備份...</autoOn>
+                <optimize>
+                    <userFile>正在優化使用者資料...</userFile>
+                    <backup>正在優化備份資料...</backup>
+                    <setting>正在優化設定資料...</setting>
+                    <all>正在優化跟改正資料...</all>
+                </optimize>
+                <refetch>正在重新擷取設定檔...</refetch>
+                <order>
+                    <choose>
+                        <disableAutoBackup>確定關閉自動備份嗎?('y' 或 'n'): </disableAutoBackup>
+                        <enableAutoBackup>確定啟動自動備份嗎?('y' 或 'n'): </enableAutoBackup>
+                        <backupKeep>輸入要保存的備份量(範圍 1 ~ 30, '-1' 取消操作): </backupKeep>
+                        <backupInterval>輸入要自動備份的間隔次數(範圍 1 ~ 10, '-1' 取消操作): </backupInterval>
+                        <remove>輸入要移除的備份資料編號("finish" 結束輸入, '-1' 取消操作): </remove>
+                    </choose>
+                    <choosed>目前已選: </choosed>
+                    <required>需要選擇: </required>
+                    <notEnough>選的不足夠!</notEnough>
+                </order>
+                <confirm>確定選擇?('y' 或 'n')</confirm>
+                <optimizeConfirm>優化過程中不能中止, 確定選擇?('y' 或 'n')</optimizeConfirm>
+            </fix>
+            <state cancel="已取消!" done="完成!" error="錯誤!" invalid="無效!"/>
+        </file>
+        <file name="backup">
+            <function>
+                <selection>請選擇一個功能('1' 備份, '2' 還原, '3' 刪除備份, '-1' 回到功能選單): </selection>
+            </function>
+            <fix>
+                <noBackup>查無備份!</noBackup>
+                <remove>正在移除備份...</remove>
+                <recover>從備份復原中...</recover>
+                <manualBackup>手動備份中...</manualBackup>
+                <autoBackup>自動備份中...</autoBackup>
+                <optimize>
+                    <crashRemove>正在移除損壞的備份...</crashRemove>
+                    <correctLocation>正在修正備份位置...</correctLocation>
+                </optimize>
+                <order>
+                    <choose>
+                        <recover>輸入要還原的備份資料編號('-1' 取消操作): </recover>
+                        <remove>輸入要移除的備份資料編號("finish" 結束輸入, '-1' 取消操作): </remove>
+                    </choose>
+                    <choosed>目前已選: </choosed>
+                </order>
+                <confirm>確定選擇?('y' 或 'n')</confirm>
+            </fix>
+            <state cancel="已取消!" done="完成!" error="錯誤!" invalid="無效!"/>
+        </file>
+    </entry>
+    <!--                           language ja_JP                               -->
+    <entry lang="ja_JP">
+        <account>
+            <function>
+                <selection>機能を選択してください('1' ユーザーファイルインターフェースに入る、'2' バックアップを管理する、'3' 設定を調整する、'-1' ログアウトする、'-2' プログラムを終了する): </selection>
+            </function>
+            <question>
+                <userName>ユーザー名を入力してください(半角英字): </userName>
+                <password>パスワードを入力してください: </password>
+            </question>
+            <save>
+                <user name="cis" pw="1234">
+                    <lastLogin>最後のログインは</lastLogin>
+		        </user>
+            </save>
+            <wait>しばらくお待ちください...</wait>
+            <invalid>ユーザー名またはパスワードが無効です、もう一度入力してください。 残り回数: </invalid>
+            <forceClosed>強制終了</forceClosed>
+            <exit>プログラムを正常に終了しました</exit>
+            <state done="ログイン成功しました" error="エラー!" finish="ログアウトしました"/>
+        </account>
+        <dir tag="config">設定ディレクトリを確立しています...</dir>
+        <file name="userFile">
+            <ini>ユーザーファイルを初期化中...</ini>
+            <function>
+                <selection>タイプを選択してください('1' 個人用連絡帳を使う、'2' 個人用書籍を使う、'3' 個人作業を使う、'-1' 機能メニューに戻る): </selection>
+                <contact>
+                    <selection>方法を選択してください('1' 新しいデータを追加する、'2' 表示する、'3' 編集する、'-1' ユーザーファイルインターフェイスに戻る): </selection>
+                    <add>
+                        <question>
+                            <name>名前を入力してください: </name>
+                            <birth>生年月日を入力してください(MMDD): </birth>
+                            <phone>電話番号かケイタイを入力してください((0x)xxxxxxxまたは((0x)xxxxxxx): </phone>
+                            <sort>分類を入力してください: </sort>
+                            <email>メールアドレスを入力してください: </email>
+                        </question>
+                        <exceed>データが最大値を超えていました</exceed>
+                    </add>
+                    <view>
+                        <question>表示オプション: </question>
+                        <choose>('1' すべてのデータを表示する、'2' 検索でデータを表示する、'-1' キャンセル)</choose>
+                        <order>
+                            <hint>('display' 表示を選ぶ、'page' ページ区切り、'finish' 完了する)</hint>
+                            <display>列表示を有効(無効)にする('finish' 入力完了、'-1' キャンセル): </display>
+                            <page>ページング番号を入力してください(0 ~ 128、'-1' キャンセル): </page>
+                            <search>検索コードを入力してください('1' name, '2' birth, '3' phone, '4' sort, '5' email): </search>
+                        </order>
+                        <noFound>データが見つかりません</noFound>
+                    </view>
+                    <edit>
+                        <question>編集オプション: </question>
+                        <choose>('1' データを削除する、'2' データを変更する、'-1' キャンセル)</choose>
+                        <order>
+                            <remove>削除するデータの番号を入力してください('finish' 入力完了、'-1' キャンセル): </remove>
+                            <modify>変更するデータの番号を入力してください('-1' キャンセル): </modify>
+                            <choosed>今選んだ: </choosed>
+                        </order>
+                    </edit>
+                </contact>
+                <book>
+                    <selection>方法を選択してください('1' 新しいデータを追加する、'2' 表示する、'3' 編集する、'-1' ユーザーファイルインターフェイスに戻る): </selection>
+                    <add>
+                        <question>
+                            <bookName>本の名前を入力してください: </bookName>
+                            <author>著者名を入力してください: </author>
+                            <publish>発行名を入力してください: </publish>
+                            <label>ラベルを入力してください(英文1文字+数字5): </label>
+                            <sort>分類を入力してください: </sort>
+                            <year>発行年を入力してください: </year>
+                        </question>
+                        <exceed>データが最大値を超えていました</exceed>
+                    </add>
+                    <view>
+                        <question>表示オプション: </question>
+                        <choose>('1' すべてのデータを表示する、'2' 検索でデータを表示する、'-1' キャンセル)</choose>
+                        <order>
+                            <hint>('display' 表示を選ぶ、'page' ページ区切り、'finish' 完了する)</hint>
+                            <display>列表示を有効(無効)にする('finish' 入力完了、'-1' キャンセル): </display>
+                            <page>ページング番号を入力してください(0 ~ 128、'-1' キャンセル): </page>
+                            <search>検索コードを入力してください('1' bookName, '2' author, '3' publish, '4' label, '5' sort, '6' year): </search>
+                        </order>
+                        <noFound>データが見つかりません</noFound>
+                    </view>
+                    <edit>
+                        <question>編集オプション: </question>
+                        <choose>('1' データを削除する、'2' データを変更する、'-1' キャンセル)</choose>
+                        <order>
+                            <remove>削除するデータの番号を入力してください('finish' 入力完了、'-1' キャンセル): </remove>
+                            <modify>変更するデータの番号を入力してください('-1' キャンセル): </modify>
+                            <choosed>今選んだ: </choosed>
+                        </order>
+                    </edit>
+                </book>
+                <work>
+                    <selection>方法を選択してください('1' 新しいデータを追加する、'2' 表示する、'3' 編集する、'-1' ユーザーファイルインターフェイスに戻る): </selection>
+                    <add>
+                        <question>
+                            <workName>仕事名を入力してください: </workName>
+                            <startTime>開始時刻を入力してください(HH:mm:ss 24時間形式): </startTime>
+                            <finishTime>終了時刻を入力してください(HH:mm:ss 24時間形式): </finishTime>
+                            <finishPercent>完了率を入力してください(0~100)(%): </finishPercent>
+                            <status>ステータス番号を入力してください('1' 完成, '2' 執行中, '3' 未開始): </status>
+                            <label>ラベルを入力してください(英文1文字+数字5): </label>
+                            <sort>分類を入力してください: </sort>
+                            <workContent>仕事の内容を入力してください: </workContent>
+                        </question>
+                        <exceed>データが最大値を超えていました</exceed>
+                    </add>
+                    <view>
+                        <question>編集オプション: </question>
+                        <choose>('1' すべてのデータを表示する、'2' 検索でデータを表示する、'-1' キャンセル)</choose>
+                        <order>
+                            <hint>('display' 表示を選ぶ、'page' ページ区切り、'finish' 完了する)</hint>
+                            <display>列表示を有効(無効)にする('finish' 入力完了、'-1' キャンセル): </display>
+                            <page>ページング番号を入力してください(0 ~ 128、'-1' キャンセル): </page>
+                            <search>検索コードを入力してください('1' workName, '2' startTime, '3' finishTime, '4' finishPercent, '5' status, '6' label, '7' sort, '8' workContent): </search>
+                        </order>
+                        <noFound>データが見つかりません</noFound>
+                    </view>
+                    <edit>
+                        <question>編集オプション: </question>
+                        <choose>('1' データを削除する、'2' データを変更する、'-1' キャンセル)</choose>
+                        <order>
+                            <remove>削除するデータの番号を入力してください('finish' 入力完了、'-1' キャンセル): </remove>
+                            <modify>変更するデータの番号を入力してください('-1' キャンセル): </modify>
+                            <choosed>今選んだ: </choosed>
+                        </order>
+                    </edit>
+                    <state execute="執行中" finish="完成" unwork="未開始"/>
+                </work>
+            </function>
+            <problem>
+                <gone>
+                    <hasBackup>
+                        <question>ユーザーファイルが削除されで、バックアップが検出されました、どうするんですか?</question>
+                        <chooseWithClone>('1' バックアップから回復する、'2' 他のクローンをユーザーファイルとして使用する、'3' 新しいユーザーファイルを作成する)</chooseWithClone>
+                        <chooseNoClone>('1' バックアップから回復する、'2' 新しいユーザーファイルを作成する)</chooseNoClone>
+                    </hasBackup>
+                    <haveBackup>
+                        <question>ユーザーファイルが削除されで、複数のバックアップが検出されました、どうするんですか?</question>
+                        <chooseWithClone>('1' 回復するバックアップを選ぶ、'2' 他のクローンをユーザーファイルとして使用する、'3' 新しいユーザーファイルを作成する)</chooseWithClone>
+                        <chooseNoClone>('1' 回復するバックアップを選ぶ、'2' 新しいユーザーファイルを作成する)</chooseNoClone>
+                    </haveBackup>
+                    <noBackup>
+                        <question>ユーザーファイルは削除されで、バックアップはいません、どうするんですか?</question>
+                        <chooseWithClone>('1' 他のクローンをユーザーファイルとして使用する、'2' 新しいユーザーファイルを作成する)</chooseWithClone>
+                        <chooseNoClone>今すぐ新しいユーザーファイルを作成します</chooseNoClone>
+                    </noBackup>
+                </gone>
+                <clone>
+                    <single>
+                        <question>ユーザーファイルがクローンを検出しました、どうするんですか?</question>
+                        <choose>('1' 削除する、'2' 保存する)</choose>
+                    </single>
+                    <multiple>
+                        <question>ユーザーファイルが複数のクローンを検出しました、どうするんですか?</question>
+                        <choose>('1' すべてを削除する、'2' 削除するファイルを選ぶ、'3' 保存する)</choose>
+                    </multiple>
+                </clone>
+                <repair>
+                    <question>ユーザーファイルがクラッシュしました、どうするんですか?</question>
+                    <choose>('1' ユーザーファイルを再確認して修復する、'2' 新しいユーザーファイルを今すぐ作成する、'3' 現在のユーザーファイルを再取得する)</choose>
+                </repair>
+            </problem>
+            <fix>
+                <create>新しいユーザーファイルを作成しています...</create>
+                <recover>ユーザーファイルを回復しています...</recover>
+                <remove>クローンを削除しています...</remove>
+                <save>クローンを保存しています...</save>
+                <order>
+                    <choose>
+                        <clone>
+                            <remove>削除するクローンを入力してください('finish' 入力完了、'-1' キャンセル): </remove>
+                            <recover>置き換えるクローンの番号を入力します('-1' キャンセル): </recover>
+                        </clone>
+                        <backup>
+                            <recover>回復するバックアップの番号を入力してください('-1' キャンセル): </recover>
+                        </backup>
+                    </choose>
+                    <choosed>今選んだ: </choosed>
+                    <required>必要に選んぶ: </required>
+                    <notEnough>選択は十分じゃありません</notEnough>
+                </order>
+                <confirm>本気ですか?('y' または 'n')</confirm>
+            </fix>
+            <state cancel="キャンセルしました" done="完了しました" error="エラー!" invalid="無効!"/>
+        </file>
+        <file name="setting">
+            <ini>設定の初期化中...</ini>
+            <function>
+                <selection>オプションを選択してください('1' 言語を設定する、'2' バックアップを設定する、'3' ユーザーインターフェースを設定する、'4' 最適化する、'5' 設定ファイルをリフェッチする、'-1' 機能メニューに戻る): </selection>
+            </function>
+            <problem>
+                <setLanguage>
+                    <question>言語オプション: </question>
+                    <choose>('1' en_USに切り替え、'2' zh_TWに切り替え、'3' ja_JPに切り替え、'-1' キャンセル)</choose>
+                </setLanguage>
+                <setBackup>
+                    <question>バックアップオプション: </question>
+                    <choose>('1' 自動バックアップ、'2' 最大バックアップキープ数量、'3' 自動バックアップ間隔回数、'-1' キャンセル)</choose>
+                </setBackup>
+                <setBackupKeep>
+                    <question>現在のバックアップが設定量を超えていることを検出しました、どうするんですか?</question>
+                    <choose>('1' 最初に古いバックアップを削除する、'2' 削除するバックアップを選ぶ, '-1' キャンセル)</choose>
+                </setBackupKeep>
+                <setUI>
+                    <question>ユーザインタフェースオプション: </question>
+                    <choose>('1' テキストインタフェースに切り替える, '2' グラフィカルインタフェースに切り替える, '-1' キャンセル)</choose>
+                </setUI>
+            </problem>
+            <fix>
+                <remove>バックアップを削除しています...</remove>
+                <UI>ユーザーインターフェースを変更しています...</UI>
+                <language>言語を変更しています...</language>
+                <keep>バックアップキープ数量を変更しています...</keep>
+                <interval>自動バックアップ間隔回数を変更しています...</interval>
+                <autoOff>自動バックアップを無効にしています...</autoOff>
+                <autoOn>自動バックアップを有効にしています...</autoOn>
+                <optimize>
+                    <userFile>ユーザーファイルを最適化しています...</userFile>
+                    <backup>バックアップを最適化しています...</backup>
+                    <setting>設定ファイルを最適化しています...</setting>
+                    <all>すべてのファイルを最適化して修正しています...</all>
+                </optimize>
+                <refetch>設定ファイルを再取得しています...</refetch>
+                <order>
+                    <choose>
+                        <disableAutoBackup>自動バックアップを無効にしますか('y' または 'n')</disableAutoBackup>
+                        <enableAutoBackup>自動バックアップを有効にしますか('y' または 'n')</enableAutoBackup>
+                        <backupKeep>バックアップキープ回数を入力してください(1 ~ 30の範囲、'-1' キャンセル): </backupKeep>
+                        <backupInterval>自動バックアップの間隔回数を入力してください(1 ~ 10の範囲、'-1' キャンセル): </backupInterval>
+                        <remove>削除するバックアップの番号を入力してください("finish" 入力完了、'-1' キャンセル): </remove>
+                    </choose>
+                    <choosed>今選んだ: </choosed>
+                    <required>必要に選んぶ: </required>
+                    <notEnough>選択は十分じゃありません</notEnough>
+                </order>
+                <confirm>本気ですか?('y' または 'n')</confirm>
+                <optimizeConfirm>最適化を途中で終了することはできません、本当によろしいですか?('y' または 'n')</optimizeConfirm>
+            </fix>
+            <state cancel="キャンセルしました" done="完了しました" error="エラー!" invalid="無効!"/>
+        </file>
+        <file name="backup">
+            <function>
+                <selection>機能を選択してください('1' バックアップする、'2' 復元する、'3' バックアップを削除する、'-1' 機能メニューに戻る): </selection>
+            </function>
+            <fix>
+                <noBackup>バックアップは存在しません</noBackup>
+                <remove>バックアップを削除しています...</remove>
+                <recover>バックアップから回復しています...</recover>
+                <manualbackup>バックアップしています...</manualbackup>
+                <autoBackup>自動バックアップしています...</autoBackup>
+                <optimize>
+                    <crashRemove>クラッシュしたバックアップを削除しています...</crashRemove>
+                    <correctLocation>バックアップの場所を修正しています...</correctLocation>
+                </optimize>
+                <order>
+                    <choose>
+                        <recover>回復するバックアップの番号を入力してください('-1' キャンセル): </recover>
+                        <remove>削除するバックアップの番号を入力してください("finish" 入力完了、'-1' キャンセル): </remove>
+                    </choose>
+                    <choosed>今選んだ: </choosed>
+                </order>
+                <confirm>本気ですか?('y' または 'n')</confirm>
+            </fix>
+            <state cancel="キャンセルしました" done="完了しました" error="エラー!" invalid="無効!"/>
+        </file>
+    </entry>
+</root>

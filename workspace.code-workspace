@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"code-runner.executorMap": {
+			"java": "cd $dir && javac -encoding UTF-8 *.java -d ../bin && cd ../bin && jar cvfe ../FinalTerm.jar FinalTerm * ../src/lang.xml ../src/template.xml && cd ../ && java -jar FinalTerm.jar"
+		}
+	}
+}
